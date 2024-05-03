@@ -4,6 +4,7 @@ from config import token  # импорт токена из файла конфи
 
 intents = discord.Intents.default()
 intents.members = True  # Необходимо для работы с пользователями и их баном
+intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
